@@ -9,7 +9,15 @@ import UIKit
 
 private let reuseIdentifier = "Cell"
 
-class ImageCollectionViewController: UICollectionViewController {
+class ImageCollectionViewController: UICollectionViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
+  
+  let imagePicker = UIImagePickerController()
+  
+  @IBAction func tappedPlusButton(_ sender: UIBarButtonItem) {
+    imagePicker.sourceType = .photoLibrary
+    present(imagePicker, animated: true, completion: nil)
+  }
+  
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -19,7 +27,8 @@ class ImageCollectionViewController: UICollectionViewController {
 
         // Register cell classes
         self.collectionView!.register(UICollectionViewCell.self, forCellWithReuseIdentifier: reuseIdentifier)
-
+      
+      imagePicker.delegate = self
         // Do any additional setup after loading the view.
     }
 

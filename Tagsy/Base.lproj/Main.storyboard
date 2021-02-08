@@ -40,7 +40,11 @@
                         </connections>
                     </collectionView>
                     <navigationItem key="navigationItem" id="pKt-IJ-Mhp">
-                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="Hlm-ir-oe5"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="Hlm-ir-oe5">
+                            <connections>
+                                <action selector="tappedPlusButton:" destination="jJz-1r-9vS" id="3Y7-ZZ-4Z8"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
                         <segue destination="KNw-Oh-yfl" kind="show" identifier="showImageDetail" id="9X9-KY-EbV"/>
