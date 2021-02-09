@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4D486C53B0206E176A20D280 /* Pods_Tagsy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ABDBFDD2F21839C7C9B5E5FE /* Pods_Tagsy.framework */; };
 		7F0137E125BF3BBE007C5D2E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F0137E025BF3BBE007C5D2E /* AppDelegate.swift */; };
 		7F0137E325BF3BBE007C5D2E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F0137E225BF3BBE007C5D2E /* SceneDelegate.swift */; };
 		7F0137E825BF3BBE007C5D2E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7F0137E625BF3BBE007C5D2E /* Main.storyboard */; };
@@ -21,6 +22,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		074F3EF241CA270F0C1C20C0 /* Pods-Tagsy.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tagsy.release.xcconfig"; path = "Target Support Files/Pods-Tagsy/Pods-Tagsy.release.xcconfig"; sourceTree = "<group>"; };
 		7F0137DD25BF3BBE007C5D2E /* Tagsy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tagsy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7F0137E025BF3BBE007C5D2E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7F0137E225BF3BBE007C5D2E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -34,6 +36,8 @@
 		7F2BBF4C25D3097E00AAF388 /* ImageColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageColor.swift; sourceTree = "<group>"; };
 		7FD965B525BF4372007CF983 /* ImageDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageDetailViewController.swift; sourceTree = "<group>"; };
 		7FFE962225BF3E11007F47D4 /* ImageCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCollectionViewController.swift; sourceTree = "<group>"; };
+		ABDBFDD2F21839C7C9B5E5FE /* Pods_Tagsy.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Tagsy.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C990D95A26B8BDD4F71C945E /* Pods-Tagsy.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tagsy.debug.xcconfig"; path = "Target Support Files/Pods-Tagsy/Pods-Tagsy.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,17 +45,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4D486C53B0206E176A20D280 /* Pods_Tagsy.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		08627F1D05EBCDB864A88B55 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				ABDBFDD2F21839C7C9B5E5FE /* Pods_Tagsy.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		7F0137D425BF3BBE007C5D2E = {
 			isa = PBXGroup;
 			children = (
 				7F0137DF25BF3BBE007C5D2E /* Tagsy */,
 				7F0137DE25BF3BBE007C5D2E /* Products */,
+				D697472330FB42EE73CA018C /* Pods */,
+				08627F1D05EBCDB864A88B55 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -114,6 +129,16 @@
 			path = Network;
 			sourceTree = "<group>";
 		};
+		D697472330FB42EE73CA018C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C990D95A26B8BDD4F71C945E /* Pods-Tagsy.debug.xcconfig */,
+				074F3EF241CA270F0C1C20C0 /* Pods-Tagsy.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -121,9 +146,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7F0137F125BF3BC0007C5D2E /* Build configuration list for PBXNativeTarget "Tagsy" */;
 			buildPhases = (
+				E35FAD9B66736C84EAEE808F /* [CP] Check Pods Manifest.lock */,
 				7F0137D925BF3BBE007C5D2E /* Sources */,
 				7F0137DA25BF3BBE007C5D2E /* Frameworks */,
 				7F0137DB25BF3BBE007C5D2E /* Resources */,
+				11DCE291CBF63005DB0B36B8 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -178,6 +205,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		11DCE291CBF63005DB0B36B8 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Tagsy/Pods-Tagsy-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Tagsy/Pods-Tagsy-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Tagsy/Pods-Tagsy-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E35FAD9B66736C84EAEE808F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Tagsy-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		7F0137D925BF3BBE007C5D2E /* Sources */ = {
@@ -335,6 +404,7 @@
 		};
 		7F0137F225BF3BC0007C5D2E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C990D95A26B8BDD4F71C945E /* Pods-Tagsy.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -353,6 +423,7 @@
 		};
 		7F0137F325BF3BC0007C5D2E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 074F3EF241CA270F0C1C20C0 /* Pods-Tagsy.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
