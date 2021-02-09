@@ -7,11 +7,12 @@
 
 import UIKit
 
-private let reuseIdentifier = "Cell"
+private let reuseIdentifier = "imageCell"
 
-class ImageCollectionViewController: UICollectionViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
+class ImageCollectionViewController: UICollectionViewController {
   
   let imagePicker = UIImagePickerController()
+  var uploadedImages: [UploadedImage] = []
   
   @IBAction func tappedPlusButton(_ sender: UIBarButtonItem) {
     imagePicker.sourceType = .photoLibrary
@@ -44,20 +45,24 @@ class ImageCollectionViewController: UICollectionViewController, UIImagePickerCo
 
     // MARK: UICollectionViewDataSource
 
-    override func numberOfSections(in collectionView: UICollectionView) -> Int {
-        // #warning Incomplete implementation, return the number of sections
-        return 0
-    }
+//    override func numberOfSections(in collectionView: UICollectionView) -> Int {
+//        // #warning Incomplete implementation, return the number of sections
+//        return 0
+//    }
 
 
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of items
-        return 0
+      return uploadedImages.count
     }
 
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier, for: indexPath)
+      
+      let imageview: UIImageView = UIImageView(frame: CGRect(x: 0, y: 0, width: 100, height: 100));
+      imageview.image = uploadedImages[indexPath.row].image
     
+      cell.contentView.addSubview(imageview)
         // Configure the cell
     
         return cell
