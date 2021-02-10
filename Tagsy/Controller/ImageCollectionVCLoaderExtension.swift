@@ -2,7 +2,7 @@ extension ImageCollectionViewController: ImageLoaderViewControllerDelegate {
   
   
   func dismiss() {
-    guard let imageLoaderVC = imageCollectionViewController else {return}
+    guard let imageLoaderVC = imageLoaderViewController else {return}
     imageLoaderVC.dismiss(animated: true, completion: nil)
   }
   
