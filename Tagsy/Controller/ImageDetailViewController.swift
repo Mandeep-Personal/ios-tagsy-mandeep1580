@@ -9,11 +9,34 @@ import UIKit
 
 class ImageDetailViewController: UIViewController {
 
-    override func viewDidLoad() {
+  @IBOutlet weak var imageView: UIImageView!
+  @IBOutlet weak var colorsCollectionView: UICollectionView!
+  @IBOutlet weak var tagsCollectionView: UICollectionView!
+  
+  var uploadedImage: UploadedImage?
+  
+  override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+    
+    colorsCollectionView.delegate = self
+    tagsCollectionView.delegate = self
+    colorsCollectionView.dataSource = self
+    tagsCollectionView.dataSource = self
     }
+  
+  override func viewWillAppear(_ animated: Bool) {
+    super.viewWillAppear(animated)
+    // leave if we do not have an UploadImage with properties to render
+    guard let uploaded = uploadedImage else { return }
+    // image
+    imageView.image = uploaded.image
+    // tags
+    tagsCollectionView.reloadData()
+    // colors
+    colorsCollectionView.reloadData()
+  }
+
     
 
     /*

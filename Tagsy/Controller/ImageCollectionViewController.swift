@@ -8,6 +8,7 @@ class ImageCollectionViewController: UICollectionViewController {
   let imagePicker = UIImagePickerController()
   var imageLoaderViewController: ImageLoaderViewController?
   var uploadedImages: [UploadedImage] = []
+  var selectedRow: Int = 0
   
   @IBAction func tappedPlusButton(_ sender: UIBarButtonItem) {
     imagePicker.sourceType = .photoLibrary
@@ -48,12 +49,20 @@ class ImageCollectionViewController: UICollectionViewController {
     return cell
   }
   
+  override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+    selectedRow = indexPath.row
+    performSegue(withIdentifier: "showImageDetail", sender: self)
+  }
+  
   override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+    guard let detailVC = segue.destination as? ImageDetailViewController else {
     guard let loaderNC = segue.destination as? UINavigationController,
           let loaderVC = loaderNC.topViewController as? ImageLoaderViewController else {return}
     imageLoaderViewController = loaderVC
     imageLoaderViewController?.delegate = self
     loaderVC.uploadedImage = uploadedImages.last
     return
+  }
+    detailVC.uploadedImage = uploadedImages[selectedRow]
   }
 }

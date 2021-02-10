@@ -21,6 +21,8 @@
 		7F7AE38025D327D700E13F97 /* ImaggaAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F7AE37F25D327D700E13F97 /* ImaggaAPI.swift */; };
 		7FB9174425D35E7A0039F133 /* ImageLoaderViewControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FB9174325D35E7A0039F133 /* ImageLoaderViewControllerDelegate.swift */; };
 		7FB9174825D35F700039F133 /* ImageCollectionVCLoaderExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FB9174725D35F700039F133 /* ImageCollectionVCLoaderExtension.swift */; };
+		7FB9175B25D3D20F0039F133 /* TagCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FB9175A25D3D20F0039F133 /* TagCell.swift */; };
+		7FB9175E25D3D4860039F133 /* ImageDetailVCDelegateExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FB9175D25D3D4860039F133 /* ImageDetailVCDelegateExtension.swift */; };
 		7FD965B625BF4372007CF983 /* ImageDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FD965B525BF4372007CF983 /* ImageDetailViewController.swift */; };
 		7FFE962325BF3E11007F47D4 /* ImageCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FFE962225BF3E11007F47D4 /* ImageCollectionViewController.swift */; };
 /* End PBXBuildFile section */
@@ -42,6 +44,8 @@
 		7F7AE37F25D327D700E13F97 /* ImaggaAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImaggaAPI.swift; sourceTree = "<group>"; };
 		7FB9174325D35E7A0039F133 /* ImageLoaderViewControllerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageLoaderViewControllerDelegate.swift; sourceTree = "<group>"; };
 		7FB9174725D35F700039F133 /* ImageCollectionVCLoaderExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCollectionVCLoaderExtension.swift; sourceTree = "<group>"; };
+		7FB9175A25D3D20F0039F133 /* TagCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagCell.swift; sourceTree = "<group>"; };
+		7FB9175D25D3D4860039F133 /* ImageDetailVCDelegateExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageDetailVCDelegateExtension.swift; sourceTree = "<group>"; };
 		7FD965B525BF4372007CF983 /* ImageDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageDetailViewController.swift; sourceTree = "<group>"; };
 		7FFE962225BF3E11007F47D4 /* ImageCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCollectionViewController.swift; sourceTree = "<group>"; };
 		ABDBFDD2F21839C7C9B5E5FE /* Pods_Tagsy.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Tagsy.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -110,6 +114,7 @@
 				7F0137E225BF3BBE007C5D2E /* SceneDelegate.swift */,
 				7F2BBF4625D3074F00AAF388 /* ImageCollectionVCPickerExtension.swift */,
 				7FB9174725D35F700039F133 /* ImageCollectionVCLoaderExtension.swift */,
+				7FB9175D25D3D4860039F133 /* ImageDetailVCDelegateExtension.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -128,6 +133,7 @@
 			children = (
 				7F0137E625BF3BBE007C5D2E /* Main.storyboard */,
 				7F0137EB25BF3BC0007C5D2E /* LaunchScreen.storyboard */,
+				7FB9175A25D3D20F0039F133 /* TagCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -280,7 +286,9 @@
 				7F7AE37D25D31BA700E13F97 /* ImaggaRouter.swift in Sources */,
 				7F0137E325BF3BBE007C5D2E /* SceneDelegate.swift in Sources */,
 				7F2BBF4D25D3097E00AAF388 /* ImageColor.swift in Sources */,
+				7FB9175B25D3D20F0039F133 /* TagCell.swift in Sources */,
 				7FD965B625BF4372007CF983 /* ImageDetailViewController.swift in Sources */,
+				7FB9175E25D3D4860039F133 /* ImageDetailVCDelegateExtension.swift in Sources */,
 				7FB9174825D35F700039F133 /* ImageCollectionVCLoaderExtension.swift in Sources */,
 				7FB9174425D35E7A0039F133 /* ImageLoaderViewControllerDelegate.swift in Sources */,
 				7F2BBF3E25D13FA700AAF388 /* ImageLoaderViewController.swift in Sources */,
