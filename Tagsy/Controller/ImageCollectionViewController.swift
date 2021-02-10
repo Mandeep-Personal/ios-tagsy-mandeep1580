@@ -1,9 +1,3 @@
-//
-//  ImageCollectionViewController.swift
-//  Tagsy
-//
-//  Created by Mandeep Dhillon on 25/01/21.
-//
 
 import UIKit
 
@@ -12,6 +6,7 @@ private let reuseIdentifier = "imageCell"
 class ImageCollectionViewController: UICollectionViewController {
   
   let imagePicker = UIImagePickerController()
+  var imageCollectionViewController: ImageLoaderViewController?
   var uploadedImages: [UploadedImage] = []
   
   @IBAction func tappedPlusButton(_ sender: UIBarButtonItem) {

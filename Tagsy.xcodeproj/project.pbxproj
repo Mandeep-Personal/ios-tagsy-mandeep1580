@@ -19,6 +19,8 @@
 		7F2BBF4D25D3097E00AAF388 /* ImageColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F2BBF4C25D3097E00AAF388 /* ImageColor.swift */; };
 		7F7AE37D25D31BA700E13F97 /* ImaggaRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F7AE37C25D31BA700E13F97 /* ImaggaRouter.swift */; };
 		7F7AE38025D327D700E13F97 /* ImaggaAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F7AE37F25D327D700E13F97 /* ImaggaAPI.swift */; };
+		7FB9174425D35E7A0039F133 /* ImageLoaderViewControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FB9174325D35E7A0039F133 /* ImageLoaderViewControllerDelegate.swift */; };
+		7FB9174825D35F700039F133 /* ImageCollectionVCLoaderExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FB9174725D35F700039F133 /* ImageCollectionVCLoaderExtension.swift */; };
 		7FD965B625BF4372007CF983 /* ImageDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FD965B525BF4372007CF983 /* ImageDetailViewController.swift */; };
 		7FFE962325BF3E11007F47D4 /* ImageCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FFE962225BF3E11007F47D4 /* ImageCollectionViewController.swift */; };
 /* End PBXBuildFile section */
@@ -38,6 +40,8 @@
 		7F2BBF4C25D3097E00AAF388 /* ImageColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageColor.swift; sourceTree = "<group>"; };
 		7F7AE37C25D31BA700E13F97 /* ImaggaRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImaggaRouter.swift; sourceTree = "<group>"; };
 		7F7AE37F25D327D700E13F97 /* ImaggaAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImaggaAPI.swift; sourceTree = "<group>"; };
+		7FB9174325D35E7A0039F133 /* ImageLoaderViewControllerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageLoaderViewControllerDelegate.swift; sourceTree = "<group>"; };
+		7FB9174725D35F700039F133 /* ImageCollectionVCLoaderExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCollectionVCLoaderExtension.swift; sourceTree = "<group>"; };
 		7FD965B525BF4372007CF983 /* ImageDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageDetailViewController.swift; sourceTree = "<group>"; };
 		7FFE962225BF3E11007F47D4 /* ImageCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCollectionViewController.swift; sourceTree = "<group>"; };
 		ABDBFDD2F21839C7C9B5E5FE /* Pods_Tagsy.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Tagsy.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -85,6 +89,7 @@
 		7F0137DF25BF3BBE007C5D2E /* Tagsy */ = {
 			isa = PBXGroup;
 			children = (
+				7FB9174225D35E500039F133 /* Protocol */,
 				7F2BBF4325D306B100AAF388 /* Network */,
 				7F2BBF4225D3069700AAF388 /* View */,
 				7F2BBF4125D3068F00AAF388 /* Model */,
@@ -104,6 +109,7 @@
 				7F0137E025BF3BBE007C5D2E /* AppDelegate.swift */,
 				7F0137E225BF3BBE007C5D2E /* SceneDelegate.swift */,
 				7F2BBF4625D3074F00AAF388 /* ImageCollectionVCPickerExtension.swift */,
+				7FB9174725D35F700039F133 /* ImageCollectionVCLoaderExtension.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -133,6 +139,14 @@
 				7F7AE37F25D327D700E13F97 /* ImaggaAPI.swift */,
 			);
 			path = Network;
+			sourceTree = "<group>";
+		};
+		7FB9174225D35E500039F133 /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				7FB9174325D35E7A0039F133 /* ImageLoaderViewControllerDelegate.swift */,
+			);
+			path = Protocol;
 			sourceTree = "<group>";
 		};
 		D697472330FB42EE73CA018C /* Pods */ = {
@@ -267,6 +281,8 @@
 				7F0137E325BF3BBE007C5D2E /* SceneDelegate.swift in Sources */,
 				7F2BBF4D25D3097E00AAF388 /* ImageColor.swift in Sources */,
 				7FD965B625BF4372007CF983 /* ImageDetailViewController.swift in Sources */,
+				7FB9174825D35F700039F133 /* ImageCollectionVCLoaderExtension.swift in Sources */,
+				7FB9174425D35E7A0039F133 /* ImageLoaderViewControllerDelegate.swift in Sources */,
 				7F2BBF3E25D13FA700AAF388 /* ImageLoaderViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

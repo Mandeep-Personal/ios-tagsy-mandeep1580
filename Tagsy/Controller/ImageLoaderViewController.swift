@@ -9,7 +9,10 @@ import UIKit
 
 class ImageLoaderViewController: UIViewController {
 
-    override func viewDidLoad() {
+  @IBOutlet weak var imageView: UIImageView!
+  @IBOutlet weak var progressView: UIProgressView!
+  
+  override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.

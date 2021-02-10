@@ -78,14 +78,35 @@
                     <view key="view" contentMode="scaleToFill" id="Jpu-KK-hrb">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="o9Q-iI-mOt">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                            </imageView>
+                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="o3L-IP-ksA">
+                                <rect key="frame" x="40" y="744" width="334" height="4"/>
+                            </progressView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="7Aa-Ck-mKI"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="o3L-IP-ksA" firstAttribute="leading" secondItem="7Aa-Ck-mKI" secondAttribute="leading" constant="40" id="E7n-y4-dJS"/>
+                            <constraint firstItem="o9Q-iI-mOt" firstAttribute="trailing" secondItem="7Aa-Ck-mKI" secondAttribute="trailing" id="Zym-1v-V3t"/>
+                            <constraint firstAttribute="bottom" secondItem="o9Q-iI-mOt" secondAttribute="bottom" id="gIv-Yz-Y8s"/>
+                            <constraint firstItem="7Aa-Ck-mKI" firstAttribute="trailing" secondItem="o3L-IP-ksA" secondAttribute="trailing" constant="40" id="hCp-YW-556"/>
+                            <constraint firstItem="o9Q-iI-mOt" firstAttribute="leading" secondItem="7Aa-Ck-mKI" secondAttribute="leading" id="nfd-V9-AjG"/>
+                            <constraint firstItem="7Aa-Ck-mKI" firstAttribute="bottom" secondItem="o3L-IP-ksA" secondAttribute="bottom" constant="60" id="uNk-mu-zaq"/>
+                            <constraint firstItem="o9Q-iI-mOt" firstAttribute="top" secondItem="7Aa-Ck-mKI" secondAttribute="top" id="z2w-f3-24t"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="6Dn-xv-jBd"/>
+                    <connections>
+                        <outlet property="imageView" destination="o9Q-iI-mOt" id="Kd9-r0-bpB"/>
+                        <outlet property="progressView" destination="o3L-IP-ksA" id="OuD-Xr-dYy"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="um7-Fo-8lC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-16" y="-473"/>
+            <point key="canvasLocation" x="-17.39130434782609" y="-473.4375"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Wnr-21-5s7">
