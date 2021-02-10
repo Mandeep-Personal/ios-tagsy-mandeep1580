@@ -24,14 +24,20 @@ class ImageLoaderViewController: UIViewController {
       image: image.image,
       progressCompletion: { newProgress in
       self.progressView.progress = newProgress},
-      completion: { id in
+      completion: { (id,tags,colors) in
       if let id = id {
         self.uploadedImage?.id = id
       }
+      if let tags = tags {
+            self.uploadedImage?.tags = tags
+          }
+        if let colors = colors {
+          self.uploadedImage?.colors = colors
+            }
       if let uploaded = self.uploadedImage {
         self.delegate?.addUploadedImage(uploadedImage: uploaded)
       }
-      
+    
       self.delegate?.dismiss()
     })
 
